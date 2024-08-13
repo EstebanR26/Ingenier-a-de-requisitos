@@ -1,7 +1,7 @@
-class ejemplo3:
+SalarioMensual = float(input('ingresa el salario mensual:'))
+HorasTrabajadasMensuales = float(input('ingrese las horas trabajadas mensualmente:'))
+HorasTrabajadasSemanales = float(input('ingrese las horas trabajadas semanalmente:'))
 
-    def calcular_sueldo_semanal(horas_trabajadas, pago_por_hora):
-        sueldo_semanal = horas_trabajadas * pago_por_hora
-        return sueldo_semanal
-    
-print(f"El sueldo semanal del trabajador es ${sueldo_semanal:.2f}")
+PagoPorHora = SalarioMensual / HorasTrabajadasMensuales
+PagoSemanal = HorasTrabajadasSemanales * PagoPorHora
+print('tu salario por hora es de', PagoPorHora, 'tu salario semanal es de', PagoSemanal)
